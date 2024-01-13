@@ -3,3 +3,5 @@ db/*sqlite*
 target/
 node_modules/
 queries/
+
+.env

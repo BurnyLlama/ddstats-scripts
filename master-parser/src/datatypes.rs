@@ -1,5 +1,11 @@
 use serde::Deserialize;
+use sqlx::prelude::FromRow;
 use std::collections::HashMap;
+
+#[derive(Debug, Deserialize, Clone, FromRow)]
+pub struct ProcessedDay {
+    pub date: String,
+}
 
 #[derive(Debug, Deserialize, Clone)]
 pub struct Skin {
